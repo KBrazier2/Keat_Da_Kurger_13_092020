@@ -9,5 +9,3 @@ CREATE TABLE burgers (
     inhaled BOOLEAN DEFAULT false,
     PRIMARY KEY (id)
 );
-
-SELECT * FROM burgers;
