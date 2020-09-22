@@ -50,7 +50,7 @@ var orm = {
         queryString += " WHERE ";
         queryString += condition;
         console.log(queryString);
-        connect.query(queryString, function(err, result) {
+        connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
             }
