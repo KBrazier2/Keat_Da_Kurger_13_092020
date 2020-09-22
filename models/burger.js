@@ -5,23 +5,18 @@ var burger = {
             cb(res);
         });
     },
-    create: function(name, cb) {
-        orm.create("burgers", [
+    insertOne: function(name, cb) {
+        orm.insertOne("burgers", [
             "burger_name", "inhaled"
         ], [
             name, false
         ], cb);
     },
-    update: function(id, cb) {
+    updateOne: function(id, cb) {
         var condition = "id=" + id;
-        orm.update("burgers", {
+        orm.updateOne("burgers", {
             inhaled: true
         }, condition, cb);
-    },
-    delete: function(condition, cb) {
-        orm.delete("burgers", condition, function(res) {
-            cb(res);
-        });
     }
 };
 

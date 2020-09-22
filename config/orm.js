@@ -1,4 +1,3 @@
-const { connect } = require("http2");
 var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
@@ -28,7 +27,7 @@ var orm = {
             cb(result);
         });
     },
-    create: function(table, cols, vals, cb) {
+    insertOne: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
         queryString += " (";
         queryString += cols.toString();
@@ -44,7 +43,7 @@ var orm = {
             cb(result);
         });
     },
-    update: function(table, objColVals, condition, cb) {
+    updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
         queryString += " SET ";
         queryString += objToSql(objColVals);
@@ -58,17 +57,6 @@ var orm = {
             cb(result);
         });
     },
-    delete: function(table, condition, cb) {
-        var queryString = "DELETE FROM " + table;
-        queryString += " WHERE ";
-        queryString += condition;
-        connect.query(queryString, function(err, result) {
-            if (err) {
-                throw err;
-            }
-            cb(result);
-        });
-    }
 };
 
 module.exports = orm;

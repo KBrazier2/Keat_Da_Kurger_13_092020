@@ -12,29 +12,17 @@ router.get("/burgers", function(req, res) {
     });
 });
 
-router.post("/burgers/create", function(req, res) {
-    burger.create(req.body.burger_name, function(result) {
+router.post("/burgers/insertOne", function(req, res) {
+    burger.insertOne(req.body.burger_name, function(result) {
         console.log(result);
         res.redirect("/");
     });
 });
 
 router.put("/burgers/:id", function(req, res) {
-    burger.update(req.params.id, function(result) {
+    burger.updateOne(req.params.id, function(result) {
         console.log(result);
         res.sendStatus(200);
-    });
-});
-
-router.delete("/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-    burger.delete(condition, function(result) {
-        if (result.affectedRows == 0) {
-            return res.status(404).end();
-        }
-        else {
-            res.status(200).end();
-        }
     });
 });
 
