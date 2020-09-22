@@ -17,6 +17,11 @@ var burger = {
         orm.updateOne("burgers", {
             inhaled: true
         }, condition, cb);
+    },
+    deleteOne: function(condition, cb) {
+        orm.deleteOne("burgers", condition, function(res) {
+            cb(res);
+        });
     }
 };
 
