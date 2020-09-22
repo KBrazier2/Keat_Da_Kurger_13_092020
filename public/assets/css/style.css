@@ -1,40 +1,68 @@
 body {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(253,204,13,1) 33%, rgba(253,204,13,1) 66%, rgba(255,255,255,1) 100%);
-  background-position: center;
-  background-size: cover;
-  font-family: 'Open Sans', sans-serif;
+  width: 99%;
+  height: 900px;
+  background-color: #fc6;
 }
 
-h1, h3 {
-  font-family: 'Sriracha', cursive;
+#top-bar {
+  margin-top: 28px;
 }
 
-.heading {
-  margin-top: 2rem;
+.spacing-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-.headerburger {
-  max-width: 30%;
-}  
-
-.burger-row {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: 0;
 }
 
-.desc, .add_burger, #burgerName {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
 }
 
-.desc, .addBurger {
-  font-size: 20px;
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
 }
 
-#burgerName {
-  width: 55%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.enter_section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#enter_text {
+  width: 400px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  font-size: 38px;
+}
+
+.task {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.button-size {
+  padding-bottom: 20px;
+}
+
+#text-enter-button {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: #f30;
 }
