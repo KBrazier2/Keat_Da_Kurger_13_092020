@@ -59,6 +59,5 @@ N/A
 You may reach me at kylebrazier@gmail.com for further questions.
 
 ## Screenshots
-![screenshot1](./2020-09-17.png)
-![screenshot2](./2020-09-17_(1).png)
+![screenshot1](./2020-09-24.png)
 
