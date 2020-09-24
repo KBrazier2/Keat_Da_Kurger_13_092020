@@ -1,8 +1,4 @@
 body {
-  /* width: 99%; */
-  /* height: 900px; */
-  /* background-image: url("./public/assets/images/bobsburgers.jpg"); */
-  /* background-color: #fc6; */
   font-family: 'Piedra', cursive;
   margin-bottom: 50px;
   margin-top: 50px;
@@ -13,41 +9,6 @@ body {
   background-size: cover;
 }
 
-/* #top-bar {
-  margin-top: 28px;
-} */
-
-/* .spacing-reset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-} */
-
-/* .list-reset {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  border: 0;
-} */
-
-/* @media (min-width: 1200px) {
-  .container {
-    width: 990px;
-  }
-} */
-
-/* @media (min-width: 992px) {
-  .container {
-    width: 990px;
-  }
-} */
-
-/* .enter_section {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-} */
-
 #enter_text {
   width: 400px;
   height: 40px;
@@ -56,21 +17,6 @@ body {
   margin: auto;
   font-size: 20px;
 }
-
-/* .task {
-  border-color: black;
-  border-style: solid;
-  border-width: 3px;
-} */
-
-/* .button-size {
-  padding-bottom: 20px;
-} */
-
-/* #text-enter-button {
-  margin-top: 10px;
-  margin-bottom: 18px;
-} */
 
 .btn {
   border-radius: 20px;
